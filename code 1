@@ -2,15 +2,15 @@
 
  main()
 {   
-    int idade, idade_mes, idade_dias, idade_anos;
+    float idade, idade_mes, idade_dias, idade_anos;
     printf("Insira sua idade em dias:\n");
-    scanf("%d", &idade);
+    scanf("%f", &idade);
     
     idade_anos=(idade/365);
     idade_mes=(idade_anos*12);
     idade_dias=(idade_anos*365);
     
     printf("Sua idade em anos, meses e dias são: \n");
-    printf("%d , %d e %d", idade_anos, idade_mes , idade_dias);
+    printf("%.0f , %.0f e %.0f", idade_anos, idade_mes , idade_dias);
     
 }
